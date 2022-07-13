@@ -1,0 +1,622 @@
+
+@import url(./style.css);
+.container-servicos{
+    max-width: 1300px;
+    
+}
+
+/*HEADER-SERVIÇOS*/
+.header-servicos{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/bg-servicos-header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+}
+.header-servicos-content{
+    position: absolute;
+    text-align: center;
+    margin-top: 2rem;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    
+
+}
+.header-servicos-content h1{
+    text-transform: uppercase;
+    position: relative;
+    font-size: 2.5rem;
+    color: #fff;
+
+    
+}
+.header-servicos-content h1::after{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    width: 100px;
+    left: 47%;
+    height: 5px;
+    background-color: var(--color-1);
+    border-radius: 3px
+
+}
+.header-servicos-content p{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: var(--type-title);
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 4rem;
+    font-style: italic;
+}
+.header-servicos-content ion-icon{
+    font-size: 3rem;
+    color: var(--color-1);
+    margin-top: 1rem;
+    animation: Down 1s infinite;
+}
+@keyframes Down{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/*FINAL-HEADER-SERVIÇOS*/
+/*SERVIÇOS*/
+
+.servicos{
+    background-color: #00a2ac21;
+    display: flex;
+    justify-content: center;
+}
+.box-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.box-servicos .card-servicos{
+    position: relative;
+    width: 30%;
+    min-height: 28rem;
+    text-align: center;
+    margin: 2rem 0;
+    z-index: 9;
+    padding: 0 1.4rem;
+    border-radius: 5px;
+    margin-top: -5rem;
+    margin-right: 1rem;
+    transition: .2s;
+    padding-bottom: 3rem;
+}
+.box-servicos .card-servicos:hover{
+    box-shadow: 2px 2px 14px #0000009e;
+    
+}
+.box-servicos .card-servicos:nth-child(1){
+    background-color: #333;
+    
+}
+.box-servicos .card-servicos:nth-child(2){
+    background-color: #15222a;
+    
+}
+.box-servicos .card-servicos:nth-child(3){
+    background-color: #01a2b0;
+    
+}
+.box-servicos .card-servicos:nth-child(2) h2{
+    border-bottom: 1px solid #ffffff26;
+    padding-bottom: 2rem;
+}
+.box-servicos .card-servicos:nth-child(3) h2 {
+    color: #fff;
+    border-bottom: 1px solid #ffffffb8;
+    padding-bottom: 2rem;
+}
+.box-servicos .card-servicos .box-img-card {
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--color-1);
+    margin: 0 auto;
+    margin-top: -4.5rem;
+}
+.box-servicos .card-servicos h2{
+    font-family: var(--type-title);
+    color: var(--color-1);
+    font-size: 1.3rem;
+}
+.box-servicos .card-servicos h4{
+    font-family: var(--type-title);
+    color: var(--color-2);
+    font-size: 1.3rem;
+}
+.box-servicos .card-servicos p{
+    font-size: 0.875rem;
+    font-family: var(--type-title);
+    color: #fff;
+    line-height: 1;
+    font-style: italic;
+    border-bottom: 1px solid #ffffff26;
+    padding-bottom: 1.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.box-servicos .card-servicos:nth-child(2) p{
+    border: none;
+    padding: 2rem 0;
+    margin-bottom: 1.5rem;
+}
+.box-servicos .card-servicos:nth-child(3) p {
+    color: #fff;
+    border: none;
+    padding: 2rem 0;
+    margin-bottom: 3.4rem;
+}
+.box-servicos .card-servicos .box-feature-servicos{
+    font-size: 0.875rem;
+    font-family: var(--type-title);
+    color: #fff;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+.box-servicos .card-servicos .box-feature-servicos span {
+    display: flex;
+    font-size: 0.875rem;
+    font-family: var(--type-title);
+    color: #fff;
+    margin: .2rem;
+    align-items: center;
+    justify-content: start;
+    
+    
+}
+
+.box-servicos .card-servicos .box-feature-servicos span{
+    position: relative;
+    margin-bottom: .50rem;
+    margin-left:5px;
+    margin-left: 25px;
+    line-height: 1;
+}
+.box-servicos .card-servicos .box-feature-servicos span::before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: var(--color-1);
+    left: -15px;
+    border-radius: 50%;
+    
+}
+.box-servicos .card-servicos .box-feature-servicos:nth-child(3) span::before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: #fff;
+    left: -15px;
+    border-radius: 50%;
+    
+}
+.box-servicos .card-servicos a{
+    
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--color-1);
+    font-family: var(--type-title);
+    border-radius: 5px;
+    padding: .60rem .70rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    transition: .2s;
+    text-transform: uppercase;
+
+}
+.box-servicos .card-servicos a:hover{
+    box-shadow: 2px 2px 14px #0000009e;
+    
+}
+
+
+/*FINAL SERVIÇOS*/
+/*ENGENHARIA*/
+.engenharia{
+    width: 100%;
+    background-image: linear-gradient(180deg, black, transparent), url('../images/bg-engenharia.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0px;
+    transition: 1s;
+   
+}
+
+.engenharia.active{
+    max-height: 99999px;
+}
+.box-engenharia{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    opacity: 0;
+    transition: 2.s;
+    
+    
+}
+.box-engenharia.active{
+    opacity: 1;
+    border-top: 1px solid #fff;
+}
+.engenharia .box-title-eng h1 {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 3rem 0rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: .7s;
+    
+   
+}
+.engenharia .box-title-eng h1.active{
+    opacity: 1;
+    transform: translateX(0px);
+    
+}
+    
+.engenharia .box-title-eng h1::after{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    width: 40px;
+    left: 49%;
+    height: 5px;
+    background-color: var(--color-1);
+    border-radius: 3px
+}
+.mask-engenharia{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000bd;
+}
+.box-carousel-eng{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-20px);
+    opacity: 0;
+    transition: .3s;
+    
+}
+.box-carousel-eng.active{
+    position: relative;
+    transform: translateX(0px);
+    opacity: 1;
+    transition: .3s;
+    z-index: 1;
+}
+.box-carousel-eng .owl-carousel {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 0rem 2rem;
+    
+    
+    
+}
+.box-carousel-eng .owl-carousel h4{
+    font-family: var(--type-text);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.1rem;
+    
+}
+.topicos-eng{
+    width: 80%;
+    padding: 0rem 5rem;
+
+}
+.topicos-eng .box-feature-topicos-eng{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.topicos-eng .box-feature-topicos-eng span{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-family: var(--type-title);
+    transform: translateX(20px);
+    opacity: 0;
+    transition: .3s;
+
+}
+.topicos-eng .box-feature-topicos-eng span.active{
+    transform: translateX(0px);
+    opacity: 1;
+    
+}
+.topicos-eng .box-feature-topicos-eng span::before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: var(--color-1);
+    left: -15px;
+    border-radius: 50%;
+    top: 8.1px;
+}
+/*FINAL ENGENHARIA*/
+/*ENGENHARIA KNOW HOW*/
+.engenharia-know-how{
+    position: relative;
+    z-index: 1;
+    transform: translateY(0px);
+    transition: .2s;
+    opacity: 0;
+    
+}
+.engenharia-know-how.active{
+    transform: translateY(20px);
+    opacity: 1;
+}
+
+.box-feature-topicos-know-how{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    
+    padding: 2rem 1rem;
+    border-top: 1px solid #ffffff5e;
+    
+    
+}
+.box-feature-topicos-know-how span{
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    font-family: var(--type-title);
+    
+    
+    transition: .3s;
+}
+.box-feature-topicos-know-how .box-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 3rem;
+    padding: 0 4rem;
+    
+}
+.box-feature-topicos-know-how .box-2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 3rem;
+    padding: 0 4rem;
+}
+
+.box-feature-topicos-know-how span::before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: var(--color-1);
+    left: -15px;
+    border-radius: 50%;
+    top: 8.1px;
+}
+/*FINAL ENGENHARIA KNOW HOW*/
+/*PRODUTOS E EQUIPAMENTOS*/
+.engenharia-3d{
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    transform: translateX(-20px);
+    transition: .2s;
+    opacity: 0;
+    
+    
+}
+.box-produto-equip{
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    
+   
+}
+.engenharia-3d.active{
+    width: 100%;
+    transform: translateX(0px);
+    opacity: 1;
+    border-top: 1px solid #ffffff5e;
+}
+.engenharia-3d .box-img-equip{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+.box-img-equip h4{
+    text-align: center;
+    color: #01a2b0;
+    font-size: 1.2rem;
+    font-family: var(--type-title);
+}
+
+
+
+
+/*FINAL PRODUTOS E EQUIPAMENTOS*/
+/*FINAL ENGENHARIA*/
+
+/*EQUIPAMENTOS*/
+.equipamentos{
+    background-color: #01a2b0;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(90deg, black, transparent),linear-gradient(-90deg, black, transparent), url("../images/bg-equipamentos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+    transition: 1s;
+    max-height: 0px;
+}
+.equipamentos.active{
+    max-height: 999999px;
+    
+}
+.box-equipamentos h1{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: .3s;
+    
+}
+.box-equipamentos h1.active{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.box-equipamentos h1::after{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    width: 50px;
+    left: 48%;
+    height: 5px;
+    background-color: var(--color-1);
+    border-radius: 3px
+}
+.box-equipamentos h4{
+    font-family: var(--type-title);
+    color: var(--color-1);
+    font-size: 1.2rem;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: .5s;
+}
+.box-equipamentos h4.active{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.box-equipamentos p{
+    color: #fff;
+    font-family: var(--type-title);
+    font-style: italic;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: .7s;
+    
+}
+.box-equipamentos p.active{
+    opacity: 1;
+    transform: translateX(0px);
+    
+}
+.equipamentos-rotativos{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.equipamentos-rotativos .box-img-rotativo{
+    width: 45%;
+}
+.box-equipamentos img{
+    border-radius: 10px;
+    border: 1px solid var(--color-1);
+    box-shadow: 1px 1px 13px 0 var(--color-1);
+    opacity: 0;
+    transform: scale(0);
+    transition: .7s;
+}
+
+.box-equipamentos img.active{
+    transform: scale(1);
+    opacity: 1;
+}
+.equipamentos-rotativos .content-rotativo{
+    width: 50%;
+    padding: 0 1rem;
+}
+.box-equipamentos-manuseio{
+    text-align: center;
+    margin-top: 3rem;
+    border-top: 1px solid #ffffff59;
+    border-width: 0px;
+    transition: 1s;
+}
+
+
+.box-sistema-peneumatico{
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ffffff59;
+    border-width: 0px;
+    margin-top: 3rem;
+    opacity: 0;
+    transition: 1s;
+    
+}
+.box-sistema-mistura{
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ffffff59;
+    border-width: 0px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transition: 1s;
+}
+.box-sistema-mistura, .box-sistema-peneumatico, .box-equipamentos-manuseio{
+    opacity: 1;
+    border-width: 1px;
+
+}
+/* FINAL EQUIPAMENTOS*/

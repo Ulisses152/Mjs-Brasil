@@ -1,0 +1,324 @@
+
+/*Menu*/
+@import url(./galeria.css);
+@media only screen and (max-width: 991px){
+
+.box-menu ul{
+    padding: 0;
+    gap:1rem;
+    
+}
+
+.box-menu ul li a{
+    font-size: 1rem; 
+}
+
+
+.segmentos .mask-seg{
+    width: 100px;
+}
+.segmentos div{
+    font-size: .65rem;
+}
+}
+@media only screen and (max-width: 769px){
+    .header-menu{
+        position: relative;
+        flex-direction: column;
+        z-index: 99999;
+        justify-content: start;
+
+        
+       
+    }
+    .logo{
+        width: 160px;
+        align-self: start;
+        margin: auto 0;
+    }
+    .box-menu ul{
+        display: block;
+        top: 3.5rem;
+        position: absolute;
+        right: 6rem;
+        background: #00a2ac;
+        border-radius: 15px 0px;
+        text-align: center;
+        z-index: 999999;
+        box-shadow: 0px 0px 14px 0px #00a2ac;
+        max-height: 0px;
+        width: 0px;
+        overflow: hidden;
+    }
+    .box-menu ul li{
+        padding: .70rem;
+        list-style: none;
+        border-bottom: 1px solid #ffffff8f;
+        width: 100%;
+    }
+    .btn-menu{
+        position: absolute;
+        display: block;
+        color: #fff;
+        font-size: 2rem;
+        margin-right: 1rem;
+        cursor: pointer;
+        z-index: 99;
+        top: 2rem;
+        right: 1rem;
+        
+    }
+    .box-menu ul li a:hover{
+        color: #fff;
+    }
+    .content-header {
+        
+        flex-direction: column;
+        margin-top: 7rem;
+    }
+    .content-header .video{
+        width: 95%;
+        margin-bottom: 3rem;
+    }
+    .segmentos .box-title h2 {
+        color: #fff;
+        padding-bottom: 3rem;
+        position: relative;
+        width: 200px;
+        font-size: 1.3rem;
+    }
+    .segmentos .mask-seg {
+        width: 170px;
+        font-size: 1rem;
+    }
+
+    .box-footer{
+        display: flex;
+        align-items: start;
+        padding: 2rem 0rem;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+    .box-logo-footer{
+        align-self: center;
+        padding: 0;
+    }
+    .box-menu-footer{
+        align-self: center;
+    }
+    .box-contact-footer div{
+        display: flex;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-features .visao, .box-features .valores {
+        
+        width: 100%;
+       
+    }
+    .box-servicos .card-servicos{
+        width: 90%;
+        margin: 3rem 0rem;
+    }
+    .box-servicos .card-servicos:nth-child(1) {
+        background-color: #333;
+        margin-top: -1rem;
+    }
+    .engenharia .box-title-eng h1::after{
+        left: 45%;
+    }
+    .topicos-eng{
+        width: 90%;
+        padding:0;
+    }
+    .owl-carousel p{
+        padding: 0rem;
+    }
+    .box-carousel-eng {
+        width: 90%;
+        
+    }
+    .topicos-eng .box-feature-topicos-eng {
+        
+        padding: 0 1rem;
+    }
+
+    .box-feature-topicos-know-how {
+       
+        
+        flex-wrap: wrap;
+    }
+    .box-feature-topicos-know-how .box-1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding: 0 1rem;
+        margin-top: 1rem;
+        
+        
+    }
+    .box-feature-topicos-know-how .box-2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+        margin-bottom: 3rem;
+        
+    }
+    .box-img-equip{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-img-equip div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-img-equip div img{
+        width: 60%;
+    }
+
+    .equipamentos-rotativos {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .box-equipamentos h1::after {
+       
+        width: 50px;
+        left: 42%;
+       
+    }
+    .equipamentos-rotativos .box-img-rotativo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .equipamentos-rotativos .box-img-rotativo img{
+        width:100%;
+    }
+    .equipamentos-rotativos .content-rotativo {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .box-content-contato{
+        flex-direction: column;
+    }
+    .box-form{
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .box-map{
+        width: 100%;
+        margin-right: 0;
+    }
+    .box-map #map{
+        position: absolute;
+        top: 0;
+        height: 300px;
+        margin: 0;
+    }
+    .paralax{
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .content-clientes .cliente{
+        width: 31%;
+    }
+    .owl-carousel p{
+        padding: 0 6rem;
+    }
+    .header-servicos-content h1::after {
+        
+        left: 41%;
+       
+    }
+    .header-servicos-content p {
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: var(--type-title);
+        width: 70%;
+      
+    }
+}
+@media only screen and (max-width: 480px){
+    .header-servicos{
+        height: 90vh;
+    }
+
+    .header-servicos-content h1::after {
+        
+        left: 37%;
+       
+    }
+    .header-servicos-content p {
+        color: #fff;
+        font-size: 1.2rem;
+        font-family: var(--type-title);
+        width: 80%;
+      
+    }
+    .content-clientes .cliente{
+        width: 47%;
+        padding: 0;
+    }
+    .logo img{
+        margin-left: -1.2rem;
+    }
+    
+}
+@media only screen and (max-width: 380px){
+
+    .logo img{
+        margin-left: -2.2rem;
+    }
+    .segmentos .mask-seg {
+        width: 270px;
+        
+    }
+    .content-header h2{
+        padding: 0 .7rem;
+    }
+    .content-header .video {
+        
+        height: 200px;
+        
+    }
+    .content-clientes .cliente{
+        width: 46%;
+        padding: 0;
+    }
+    .owl-carousel p {
+        padding: 0px 0rem;
+    }
+    .box-contact-footer div p {
+        font-size: 0.9rem;
+    }
+    .box-footer{
+       gap: 1rem;
+    }
+    .header-servicos-content h1 {
+        
+        font-size: 2rem;
+       
+    }
+}
+
+
+/*galeria*/
+
+
